@@ -88,6 +88,16 @@ public class Poker {
         Player winner = helper.calculateWinner(players, game.getBoard());
         System.out.println("Winner: " + winner.name);
 
+        Card card1 = new Card("4", "c");
+        Card card2 = new Card("A", "c");
+        Card card3 = new Card("10", "c");
+        Card card4 = new Card("5", "c");
+        Card card5 = new Card("J", "c");
+        Card card6 = new Card("2", "d");
+        Card card7 = new Card("3", "d");
+
+        System.out.println(helper.pair(new ArrayList<Card>(Arrays.asList(card1, card2, card3, card4, card5, card6, card7))));
+
     }
 
 }
